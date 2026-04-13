@@ -1,0 +1,11 @@
+      ORG 0
+START:MOV A,#0FDH
+      MOV B,#100
+	  DIV AB
+	  MOV 30H,A
+	  MOV A,B
+	  MOV B,#10
+	  DIV AB
+	  MOV 31H,A
+	  MOV 32H,B
+	  END

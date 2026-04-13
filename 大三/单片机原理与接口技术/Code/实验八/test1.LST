@@ -1,0 +1,53 @@
+C51 COMPILER V9.01   TEST1                                                                 12/05/2024 16:11:11 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE TEST1
+OBJECT MODULE PLACED IN test1.OBJ
+COMPILER INVOKED BY: D:\Download\Keil4\C51\BIN\C51.EXE test1.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <reg51.h>
+   2          #include <absacc.h>
+   3          
+   4          #define uchar unsigned char
+   5          #define uint unsigned int
+   6          
+   7          void delayxms(uint x)
+   8          {
+   9   1        uint i,j;
+  10   1        for(i=x;i>0;i--)
+  11   1          for(j=115;j>0;j--);
+  12   1      }
+  13          
+  14          void main()
+  15          {
+  16   1        uchar a;
+  17   1        while(1)
+  18   1        {
+  19   2        for(a=0;a<255;a++)
+  20   2        {
+  21   3          XBYTE[0xbfff]=a;
+  22   3              delayxms(1);
+  23   3        }
+  24   2        for(a=255;a>0;a--)
+  25   2        {
+  26   3          XBYTE[0xbfff]=a;
+  27   3              delayxms(1);
+  28   3        }
+  29   2        }
+  30   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     62    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

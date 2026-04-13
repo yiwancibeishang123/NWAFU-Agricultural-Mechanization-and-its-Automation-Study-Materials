@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\音乐文档视频图片\Documents\学习文件\单片机原理与接口技术\Code\第五章、第六章习题\6-8.uvproj
+Project File Date:  10/28/2024
+
+<h2>Output:</h2>
+Build target 'Target 1'
+Target has no object modules
+Target not created
+Build target 'Target 1'
+compiling 6-8.c...
+6-8.C(25): error C132: 'interrupt3': not in formal parameter list
+6-8.C(25): error C141: syntax error near '{'
+6-8.C(26): error C132: 'a': not in formal parameter list
+6-8.C(27): error C244: 'TH1': can't initialize, bad type or class
+6-8.C(27): error C132: 'TH1': not in formal parameter list
+6-8.C(28): error C244: 'TL1': can't initialize, bad type or class
+6-8.C(28): error C132: 'TL1': not in formal parameter list
+6-8.C(29): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling 6-8.c...
+6-8.C(25): error C132: 'interrupt3': not in formal parameter list
+6-8.C(25): error C141: syntax error near '{'
+6-8.C(26): error C132: 'a': not in formal parameter list
+6-8.C(27): error C244: 'TH1': can't initialize, bad type or class
+6-8.C(27): error C132: 'TH1': not in formal parameter list
+6-8.C(28): error C244: 'TL1': can't initialize, bad type or class
+6-8.C(28): error C132: 'TL1': not in formal parameter list
+6-8.C(29): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling 6-8.c...
+6-8.C(25): error C132: 'interrupt3': not in formal parameter list
+6-8.C(25): error C141: syntax error near '{'
+6-8.C(26): error C132: 'a': not in formal parameter list
+6-8.C(27): error C244: 'TH1': can't initialize, bad type or class
+6-8.C(27): error C132: 'TH1': not in formal parameter list
+6-8.C(28): error C244: 'TL1': can't initialize, bad type or class
+6-8.C(28): error C132: 'TL1': not in formal parameter list
+6-8.C(29): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling 6-8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=201
+"6-8" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling 6-8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=201
+"6-8" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling 6-8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=201
+"6-8" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling 6-8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=201
+"6-8" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling 6-8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=201
+"6-8" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling 6-8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=201
+"6-8" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling 6-8.c...
+linking...
+Program Size: data=10.0 xdata=0 code=201
+"6-8" - 0 Error(s), 0 Warning(s).

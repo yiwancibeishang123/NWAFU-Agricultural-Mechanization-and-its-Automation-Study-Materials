@@ -1,0 +1,106 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        10/24/2024  20:31:48  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\DOWNLOAD\KEIL4\C51\BIN\BL51.EXE 5-6.obj TO 5-6
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  5-6.obj (5_6)
+  D:\DOWNLOAD\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\DOWNLOAD\KEIL4\C51\LIB\C51S.LIB (?C?CLDPTR)
+
+
+LINK MAP OF MODULE:  5-6 (5_6)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0001H     UNIT         _DATA_GROUP_
+            IDATA   0009H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0055H     UNIT         ?PR?MAIN?5_6
+            CODE    0058H     0019H     UNIT         ?C?LIB_CODE
+            CODE    0071H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   5-6 (5_6)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?5_6
+
+?PR?MAIN?5_6                   0008H    0001H
+
+
+
+SYMBOL TABLE OF MODULE:  5-6 (5_6)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        5_6
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0003H         PUBLIC        main
+  -------         PROC          MAIN
+  -------         DO            
+  D:0006H         SYMBOL        pd1
+  D:0001H         SYMBOL        pd2
+  D:0008H         SYMBOL        a
+BL51 BANKED LINKER/LOCATER V6.22                                                      10/24/2024  20:31:48  PAGE 2
+
+
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:0003H         LINE#         4
+  C:0003H         LINE#         5
+  C:0003H         LINE#         8
+  C:0005H         LINE#         9
+  C:0009H         LINE#         10
+  C:000BH         LINE#         11
+  C:000EH         LINE#         12
+  C:0011H         LINE#         13
+  C:0015H         LINE#         14
+  C:0018H         LINE#         15
+  C:001BH         LINE#         16
+  C:001DH         LINE#         17
+  C:0021H         LINE#         18
+  C:0026H         LINE#         20
+  C:002CH         LINE#         21
+  C:002CH         LINE#         22
+  C:0036H         LINE#         23
+  C:0036H         LINE#         24
+  C:0037H         LINE#         25
+  C:003EH         LINE#         26
+  C:0040H         LINE#         28
+  C:0040H         LINE#         29
+  C:0044H         LINE#         30
+  C:0046H         LINE#         31
+  C:0046H         LINE#         32
+  C:0047H         LINE#         33
+  C:0049H         LINE#         34
+  C:0053H         LINE#         35
+  C:0053H         LINE#         36
+  C:0057H         LINE#         37
+  C:0057H         LINE#         38
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        5_6
+
+  -------         MODULE        ?C?CLDPTR
+  C:0058H         PUBLIC        ?C?CLDPTR
+  -------         ENDMOD        ?C?CLDPTR
+
+Program Size: data=10.0 xdata=0 code=125
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

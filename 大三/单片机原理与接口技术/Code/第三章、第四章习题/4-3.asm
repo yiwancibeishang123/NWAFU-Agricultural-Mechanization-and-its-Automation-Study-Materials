@@ -1,0 +1,8 @@
+      ORG 0
+START:MOV DPTR,#2000H;
+      MOV A,#12H;
+	  MOV R7,#255;
+LOOP1:MOVX @DPTR,A;
+      INC DPTR;
+	  DJNZ R7,LOOP1;
+	  END

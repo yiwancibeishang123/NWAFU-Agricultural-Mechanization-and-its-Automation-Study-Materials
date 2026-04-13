@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\音乐文档视频图片\Documents\学习文件\单片机原理与接口技术\Code\实验五\text1.uvproj
+Project File Date:  11/21/2024
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling test1.c...
+linking...
+Program Size: data=9.0 xdata=0 code=44
+creating hex file from "text1"...
+"text1" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling test1.c...
+linking...
+Program Size: data=9.0 xdata=0 code=44
+creating hex file from "text1"...
+"text1" - 0 Error(s), 0 Warning(s).

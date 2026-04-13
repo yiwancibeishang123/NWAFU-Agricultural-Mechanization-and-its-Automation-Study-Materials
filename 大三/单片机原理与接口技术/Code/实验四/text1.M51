@@ -1,0 +1,94 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/21/2024  20:58:03  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\DOWNLOAD\KEIL4\C51\BIN\BL51.EXE test1.obj TO text1
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  test1.obj (TEST1)
+  D:\DOWNLOAD\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  text1 (TEST1)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0001H     UNIT         ?DT?TEST1
+            IDATA   0009H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     000CH     UNIT         ?C_C51STARTUP
+            CODE    000FH     0003H     UNIT         ?PR?T0INT?TEST1
+                    0012H     0001H                  *** GAP ***
+            CODE    0013H     0003H     ABSOLUTE     
+            CODE    0016H     001BH     UNIT         ?PR?MAIN?TEST1
+
+
+
+OVERLAY MAP OF MODULE:   text1 (TEST1)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?TEST1
+
+
+
+SYMBOL TABLE OF MODULE:  text1 (TEST1)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TEST1
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  B:00A8H.7       PUBLIC        EA
+  C:0016H         PUBLIC        main
+  D:0089H         PUBLIC        TMOD
+  B:0090H.0       PUBLIC        led
+  B:00A8H.2       PUBLIC        EX1
+  B:0088H.2       PUBLIC        IT1
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/21/2024  20:58:03  PAGE 2
+
+
+  D:0008H         PUBLIC        i
+  C:000FH         PUBLIC        t0int
+  -------         PROC          MAIN
+  C:0016H         LINE#         7
+  C:0016H         LINE#         8
+  C:0016H         LINE#         9
+  C:0019H         LINE#         11
+  C:001BH         LINE#         12
+  C:001DH         LINE#         13
+  C:001FH         LINE#         14
+  C:0021H         LINE#         15
+  C:0024H         LINE#         17
+  C:0024H         LINE#         18
+  C:0024H         LINE#         19
+  C:0029H         LINE#         20
+  C:0029H         LINE#         21
+  C:002BH         LINE#         22
+  C:002DH         LINE#         23
+  C:002FH         LINE#         24
+  C:002FH         LINE#         25
+  -------         ENDPROC       MAIN
+  -------         PROC          T0INT
+  C:000FH         LINE#         28
+  C:000FH         LINE#         30
+  C:0011H         LINE#         31
+  -------         ENDPROC       T0INT
+  -------         ENDMOD        TEST1
+
+Program Size: data=10.0 xdata=0 code=48
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

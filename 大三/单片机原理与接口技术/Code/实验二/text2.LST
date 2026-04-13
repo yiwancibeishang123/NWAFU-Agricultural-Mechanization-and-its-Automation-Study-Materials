@@ -1,0 +1,49 @@
+C51 COMPILER V9.01   TEXT2                                                                 11/07/2024 17:07:20 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE TEXT2
+OBJECT MODULE PLACED IN text2.OBJ
+COMPILER INVOKED BY: D:\Download\Keil4\C51\BIN\C51.EXE text2.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <reg51.h>
+   2          #include <intrins.h>
+   3          
+   4          #define led P1
+   5          #define uchar unsigned char
+   6          
+   7          uchar a;
+   8          unsigned int x;
+   9          
+  10          void delayxs(unsigned int x)
+  11          {
+  12   1        unsigned int i,j,k;
+  13   1        for(k=x;k>0;k--)
+  14   1          for(i=1000;i>0;i--)
+  15   1                for(j=100;j>0;j--);
+  16   1      }
+  17          
+  18          void main()
+  19          {
+  20   1        led=0xFE;
+  21   1        for(a=1;a<9;a++)
+  22   1        {
+  23   2          delayxs(1);
+  24   2          led=_crol_(led,1);
+  25   2        }  
+  26   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     79    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      3    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

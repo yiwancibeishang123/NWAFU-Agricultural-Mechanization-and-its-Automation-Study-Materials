@@ -1,0 +1,70 @@
+C51 COMPILER V9.01   5_5                                                                   10/24/2024 19:46:00 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE 5_5
+OBJECT MODULE PLACED IN 5-5.OBJ
+COMPILER INVOKED BY: D:\Download\Keil4\C51\BIN\C51.EXE 5-5.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <reg51.h>
+   2          #include <absacc.h>
+   3          #define uchar unsigned char
+   4          void main()
+   5          {
+   6   1      signed char data *pd;
+   7   1      uchar data a,b;
+   8   1      uchar data i=0;
+   9   1      pd=0x30;
+  10   1      DBYTE[0x30]=-1;
+  11   1      DBYTE[0x31]=1;
+  12   1      DBYTE[0x32]=1;
+  13   1      DBYTE[0x33]=0;
+  14   1      DBYTE[0x34]=1;
+  15   1      DBYTE[0x35]=1;
+  16   1      DBYTE[0x36]=1;
+  17   1      DBYTE[0x37]=-1;
+  18   1      DBYTE[0x38]=1;
+  19   1      DBYTE[0x39]=0;
+  20   1      DBYTE[0x3A]=1;
+  21   1      DBYTE[0x3B]=0;
+  22   1      DBYTE[0x3C]=1;
+  23   1      DBYTE[0x3D]=-1;
+  24   1      DBYTE[0x3E]=1;
+  25   1      DBYTE[0x3F]=1;
+  26   1      DBYTE[0x40]=-1;
+  27   1      DBYTE[0x41]=1;
+  28   1      DBYTE[0x42]=1;
+  29   1      DBYTE[0x43]=1;
+  30   1      while(i<20)
+  31   1        {
+  32   2         if(*pd<0)
+  33   2         {
+  34   3               a++;
+  35   3          }
+  36   2         else
+  37   2         {
+  38   3           b++;
+  39   3          }
+  40   2         i++;
+  41   2         pd++;
+  42   2        }
+  43   1        DBYTE[0x10]=a;
+  44   1        DBYTE[0x11]=b;
+  45   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     96    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+C51 COMPILER V9.01   5_5                                                                   10/24/2024 19:46:00 PAGE 2   
+
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

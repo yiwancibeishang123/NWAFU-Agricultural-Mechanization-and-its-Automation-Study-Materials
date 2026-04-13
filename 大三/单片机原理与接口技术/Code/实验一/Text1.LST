@@ -1,0 +1,39 @@
+A51 MACRO ASSEMBLER  TEXT1                                                                10/24/2024 17:46:57 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN Text1.OBJ
+ASSEMBLER INVOKED BY: D:\Download\Keil4\C51\BIN\A51.EXE Text1.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1           ORG 0
+0000 753178            2     START:MOV 31H,#78H
+0003 753234            3           MOV 32H,#34H
+0006 753398            4               MOV 33H,#98H
+0009 753489            5               MOV 34H,#89H
+000C E531              6               MOV A,31H
+000E 2532              7               ADD A,32H
+0010 F535              8               MOV 35H,A
+0012 E533              9               MOV A,33H
+0014 3534             10               ADDC A,34H
+0016 F536             11               MOV 36H,A
+0018 7400             12               MOV A,#0
+001A 3400             13               ADDC A,#0
+001C F537             14               MOV 37H,A
+                      15               END
+A51 MACRO ASSEMBLER  TEXT1                                                                10/24/2024 17:46:57 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+START. . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

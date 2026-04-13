@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\音乐文档视频图片\Documents\学习文件\单片机原理与接口技术\Code\实验七\text2.uvproj
+Project File Date:  12/04/2024
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling test2.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SCAN?TEST2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?TEST2
+*** WARNING L10: CANNOT DETERMINE ROOT SEGMENT
+Program Size: data=10.0 xdata=0 code=182
+"text2" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling test2.c...
+linking...
+Program Size: data=11.0 xdata=0 code=424
+"text2" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=0 code=424
+creating hex file from "text2"...
+"text2" - 0 Error(s), 0 Warning(s).

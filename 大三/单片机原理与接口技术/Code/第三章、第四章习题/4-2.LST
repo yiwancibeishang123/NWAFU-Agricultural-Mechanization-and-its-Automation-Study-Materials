@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  4_2                                                                  10/10/2024 20:49:03 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN 4-2.OBJ
+ASSEMBLER INVOKED BY: D:\Download\Keil4\C51\BIN\A51.EXE 4-2.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+                       4     
+                       5     
+                       6     
+                       7     
+                       8     
+                       9     
+                      10     
+                      11     
+                      12     
+                      13     
+                      14     
+                      15     
+                      16     
+                      17     
+                      18     
+                      19     
+                      20     
+0000                  21                ORG 0
+0000 90000A           22     MOV dptr,#10
+0003 740C             23     MOV A,#12
+0005 F0               24     MOVX @dptr,A
+                      25     END
+A51 MACRO ASSEMBLER  4_2                                                                  10/10/2024 20:49:03 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

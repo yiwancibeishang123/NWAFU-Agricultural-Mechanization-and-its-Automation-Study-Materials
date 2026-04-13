@@ -1,0 +1,52 @@
+C51 COMPILER V9.01   TEST1                                                                 11/28/2024 17:27:57 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE TEST1
+OBJECT MODULE PLACED IN test1.OBJ
+COMPILER INVOKED BY: D:\Download\Keil4\C51\BIN\C51.EXE test1.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <reg51.h>
+   2          #include <absacc.h>
+   3          
+   4          #define uchar unsigned char
+   5          #define uint unsigned int
+   6          
+   7          unsigned char idata table1[]="Welcome to Northwest A&F University!$";
+   8          unsigned char idata table2[]="Welcome to College of Mechanical and Electronic Engineering!$";
+   9          sbit led=P1^0;
+  10          
+  11          void main()
+  12          {
+  13   1        uint i=0;
+  14   1        led=1;
+  15   1        while(table1[i]!='$')
+  16   1        {
+  17   2          XBYTE[i]=table1[i];
+  18   2              i++;
+  19   2        }
+  20   1        i=0;
+  21   1        while(table2[i]!='$')
+  22   1        {
+  23   2          XBYTE[i+0x50]=table2[i];
+  24   2              i++;
+  25   2        }
+  26   1      
+  27   1        led=0;
+  28   1        while(1);
+  29   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     63    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =    100    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

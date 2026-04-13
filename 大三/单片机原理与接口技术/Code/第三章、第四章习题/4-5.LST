@@ -1,0 +1,51 @@
+A51 MACRO ASSEMBLER  4_5                                                                  10/10/2024 22:14:49 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN 4-5.OBJ
+ASSEMBLER INVOKED BY: D:\Download\Keil4\C51\BIN\A51.EXE 4-5.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1           ORG 0
+0000                   2     START:
+0000 754102            3           MOV 41H,#2
+0003 75420C            4           MOV 42H,#12
+0006 75430D            5               MOV 43H,#13
+0009 75520C            6               MOV  52H,#12
+000C 75530D            7               MOV 53H,#13
+000F 7842              8               MOV  R0 ,#42H
+0011 7952              9               MOV R1,#52H
+                      10              
+0013                  11     LOOP: 
+0013 E6               12               MOV A,@R0
+0014 97               13           SUBB A,@R1
+0015 700A             14               JNZ LOOP1
+0017 08               15               INC R0
+0018 09               16               INC R1
+0019 D541F7           17               DJNZ 41H,LOOP 
+001C 754000           18               MOV 40H,#0     
+001F 8005             19               SJMP FINISH
+0021                  20     LOOP1:
+0021 7540FF           21           MOV 40H,#0FFH
+0024 8000             22               SJMP FINISH
+0026                  23     FINISH:  
+                      24           END
+A51 MACRO ASSEMBLER  4_5                                                                  10/10/2024 22:14:49 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+FINISH . . . . . .  C ADDR   0026H   A   
+LOOP . . . . . . .  C ADDR   0013H   A   
+LOOP1. . . . . . .  C ADDR   0021H   A   
+START. . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

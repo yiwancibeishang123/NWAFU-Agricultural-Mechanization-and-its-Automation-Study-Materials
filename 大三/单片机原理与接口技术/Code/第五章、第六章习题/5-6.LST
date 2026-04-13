@@ -1,0 +1,61 @@
+C51 COMPILER V9.01   5_6                                                                   10/24/2024 20:31:48 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE 5_6
+OBJECT MODULE PLACED IN 5-6.OBJ
+COMPILER INVOKED BY: D:\Download\Keil4\C51\BIN\C51.EXE 5-6.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <reg51.h>
+   2          #include <absacc.h>
+   3          #define uchar unsigned char
+   4          void main()
+   5          {
+   6   1        uchar data *pd1,*pd2;
+   7   1        uchar data a;
+   8   1        uchar data i=0;
+   9   1        DBYTE[0x41]=3;
+  10   1        DBYTE[0x42]=0;
+  11   1        DBYTE[0x43]=2;
+  12   1        DBYTE[0x44]=3;
+  13   1        DBYTE[0x52]=1;
+  14   1        DBYTE[0x53]=2;
+  15   1        DBYTE[0x54]=3;
+  16   1        pd1=0x42;
+  17   1        pd2=0x52;
+  18   1        a=DBYTE[0x41];
+  19   1      
+  20   1        while(i<a)
+  21   1        {
+  22   2          if(*pd1==*pd2)
+  23   2              {
+  24   3                pd1++;
+  25   3                pd2++;
+  26   3              }
+  27   2              else
+  28   2              {
+  29   3                DBYTE[0x40]=-1;
+  30   3                break;
+  31   3              }
+  32   2              i++;
+  33   2        }
+  34   1        if(*pd1==*pd2)
+  35   1        {
+  36   2        DBYTE[0x40]=0;
+  37   2        }
+  38   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     85    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

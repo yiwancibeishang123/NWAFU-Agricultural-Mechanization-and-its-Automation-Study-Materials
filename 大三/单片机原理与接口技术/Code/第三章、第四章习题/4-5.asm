@@ -1,0 +1,24 @@
+      ORG 0
+START:
+      MOV 41H,#2
+      MOV 42H,#12
+	  MOV 43H,#13
+  	  MOV  52H,#12
+	  MOV 53H,#13
+	  MOV  R0 ,#42H
+	  MOV R1,#52H
+	 
+LOOP: 
+	  MOV A,@R0
+      SUBB A,@R1
+	  JNZ LOOP1
+	  INC R0
+	  INC R1
+	  DJNZ 41H,LOOP	
+	  MOV 40H,#0	 
+	  SJMP FINISH
+LOOP1:
+      MOV 40H,#0FFH
+	  SJMP FINISH
+FINISH:  
+      END

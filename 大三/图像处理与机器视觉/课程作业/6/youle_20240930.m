@@ -1,0 +1,27 @@
+% I = imread("Lena.png");
+% J = imnoise(I,'salt & pepper',0.02);
+% figure;imshow(I);
+% figure;imshow(J);
+% K1 = medfilt2(J);
+% K2 = medfilt2(J,[5,5]);
+% K3 = medfilt2(J,[7,7]);
+% K4 = medfilt2(J,[9,9]);
+% figure;imshow(K1);
+% figure;imshow(K2);
+% figure;imshow(K3);
+% figure;imshow(K4);
+% imwrite(I,'1.jpg');
+% imwrite(J,'2.jpg');
+% imwrite(K1,'3.jpg');
+% imwrite(K2,'4.jpg');
+% imwrite(K3,'5.jpg');
+% imwrite(K4,'6.jpg');
+
+A = imread('Lena.png');
+noise = imnoise(A,'gaussian');
+subplot(221),imshow(A),title('origin');
+subplot(222),imshow(noise),title('noise');
+res1 = filter2(fspecial('average',3),noise);
+res2 = filter2(fspecial('average',7),noise);
+subplot(222),imshow(uint8(res1)),title('3×3');
+subplot(222),imshow(uint8(res2)),title('7×7');

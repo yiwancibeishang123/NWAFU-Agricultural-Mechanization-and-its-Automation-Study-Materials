@@ -1,0 +1,33 @@
+      ORG 0
+START:MOV R0,#30H
+      MOV 30H,#0FFH
+	  MOV 31H,#1
+	  MOV 32H,#1
+	  MOV 33H,#1
+	  MOV 34H,#1
+	  MOV 35H,#1
+	  MOV 36H,#1
+	  MOV 37H,#1
+	  MOV 38H,#1
+	  MOV 39H,#1
+	  MOV 3AH,#1
+	  MOV 3BH,#1
+	  MOV 3CH,#1
+	  MOV 3DH,#1
+	  MOV 3EH,#1
+	  MOV 3FH,#1
+	  MOV 40H,#0FFH
+	  MOV 41H,#1
+	  MOV 42H,#1
+	  MOV 43H,#1
+      MOV R1,#20
+	  MOV 50H,#0
+	  MOV 51H,#0
+REP  :MOV A,@R0
+      JB ACC.7,NEG
+	  INC 50H
+	  SJMP QUIT
+NEG  :INC 51H
+QUIT :INC R0
+      DJNZ R1,REP
+	  END

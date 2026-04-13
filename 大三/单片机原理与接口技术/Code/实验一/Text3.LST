@@ -1,0 +1,61 @@
+A51 MACRO ASSEMBLER  TEXT3                                                                10/27/2024 22:09:08 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN Text3.OBJ
+ASSEMBLER INVOKED BY: D:\Download\Keil4\C51\BIN\A51.EXE Text3.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1           ORG 0
+0000 7830              2     START:MOV R0,#30H
+0002 7530FF            3           MOV 30H,#0FFH
+0005 753101            4               MOV 31H,#1
+0008 753201            5               MOV 32H,#1
+000B 753301            6               MOV 33H,#1
+000E 753401            7               MOV 34H,#1
+0011 753501            8               MOV 35H,#1
+0014 753601            9               MOV 36H,#1
+0017 753701           10               MOV 37H,#1
+001A 753801           11               MOV 38H,#1
+001D 753901           12               MOV 39H,#1
+0020 753A01           13               MOV 3AH,#1
+0023 753B01           14               MOV 3BH,#1
+0026 753C01           15               MOV 3CH,#1
+0029 753D01           16               MOV 3DH,#1
+002C 753E01           17               MOV 3EH,#1
+002F 753F01           18               MOV 3FH,#1
+0032 7540FF           19               MOV 40H,#0FFH
+0035 754101           20               MOV 41H,#1
+0038 754201           21               MOV 42H,#1
+003B 754301           22               MOV 43H,#1
+003E 7914             23           MOV R1,#20
+0040 755000           24               MOV 50H,#0
+0043 755100           25               MOV 51H,#0
+0046 E6               26     REP  :MOV A,@R0
+0047 20E704           27           JB ACC.7,NEG
+004A 0550             28               INC 50H
+004C 8002             29               SJMP QUIT
+004E 0551             30     NEG  :INC 51H
+0050 08               31     QUIT :INC R0
+0051 D9F3             32           DJNZ R1,REP
+                      33               END
+A51 MACRO ASSEMBLER  TEXT3                                                                10/27/2024 22:09:08 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ACC. . . . . . . .  D ADDR   00E0H   A   
+NEG. . . . . . . .  C ADDR   004EH   A   
+QUIT . . . . . . .  C ADDR   0050H   A   
+REP. . . . . . . .  C ADDR   0046H   A   
+START. . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

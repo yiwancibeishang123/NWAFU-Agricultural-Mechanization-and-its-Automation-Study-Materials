@@ -1,0 +1,36 @@
+A51 MACRO ASSEMBLER  TEXT2                                                                10/24/2024 16:56:32 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN Text2.OBJ
+ASSEMBLER INVOKED BY: D:\Download\Keil4\C51\BIN\A51.EXE Text2.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1           ORG 0
+0000 74FD              2     START:MOV A,#0FDH
+0002 75F064            3           MOV B,#100
+0005 84                4               DIV AB
+0006 F530              5               MOV 30H,A
+0008 E5F0              6               MOV A,B
+000A 75F00A            7               MOV B,#10
+000D 84                8               DIV AB
+000E F531              9               MOV 31H,A
+0010 85F032           10               MOV 32H,B
+                      11               END
+A51 MACRO ASSEMBLER  TEXT2                                                                10/24/2024 16:56:32 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+START. . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

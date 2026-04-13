@@ -1,0 +1,33 @@
+A51 MACRO ASSEMBLER  4_3                                                                  10/10/2024 20:18:52 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN 4-3.OBJ
+ASSEMBLER INVOKED BY: D:\Download\Keil4\C51\BIN\A51.EXE 4-3.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1           ORG 0
+0000 902000            2     START:MOV DPTR,#2000H;
+0003 7412              3           MOV A,#12H;
+0005 7FFF              4               MOV R7,#255;
+0007 F0                5     LOOP1:MOVX @DPTR,A;
+0008 A3                6           INC DPTR;
+0009 DFFC              7               DJNZ R7,LOOP1;
+                       8               END
+A51 MACRO ASSEMBLER  4_3                                                                  10/10/2024 20:18:52 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP1. . . . . . .  C ADDR   0007H   A   
+START. . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

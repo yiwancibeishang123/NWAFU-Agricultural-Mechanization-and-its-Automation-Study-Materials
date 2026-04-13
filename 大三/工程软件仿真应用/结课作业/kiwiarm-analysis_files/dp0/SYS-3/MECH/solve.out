@@ -1,0 +1,96 @@
+
+ Ansys Mechanical Enterprise                       
+
+ ANSYS LICENSE MANAGER ERROR:
+ Insufficient FlexNet Publisher (FNP) license count of HPC Parallel are available for use, only 4 of the requested 8 tasks were available.
+ Feature removed during lmreread, or wrong SERVER line hostid.
+ Feature:       anshpc
+ License path:  1055@localhost;
+ FlexNet Licensing error:-92,147
+
+ *** ERROR - Insufficient HPC licenses available.
+whybad=          -4
+
++--------------------- M A P D L   S T A T I S T I C S ------------------------+
+
+Release: 2024 R1            Build: 24.1       Update: UP20231106   Platform: WINDOWS x64 
+Date Run: 06/19/2025   Time: 16:15     Process ID: 19652
+Operating System: Windows 11  (Build: 22631)
+
+Processor Model: AMD Ryzen 7 5800H with Radeon Graphics
+
+Compiler: Intel(R) Fortran Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) C/C++ Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191125
+          BLAS Library supplied by AMD BLIS
+
+Number of machines requested            :    1
+Total number of cores available         :   16
+Number of physical cores available      :    8
+Number of processes requested           :    8
+Number of threads per process requested :    1
+Total number of cores requested         :    8 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2021.10 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0             LAPTOP-TMO3KIEA   D:\音乐文档视频图片\Documents\学习文件\大三\工程软件仿真应用\结课作业\_ProjectScratch\Scr5769
+     1             LAPTOP-TMO3KIEA   D:\音乐文档视频图片\Documents\学习文件\大三\工程软件仿真应用\结课作业\_ProjectScratch\Scr5769
+     2             LAPTOP-TMO3KIEA   D:\音乐文档视频图片\Documents\学习文件\大三\工程软件仿真应用\结课作业\_ProjectScratch\Scr5769
+     3             LAPTOP-TMO3KIEA   D:\音乐文档视频图片\Documents\学习文件\大三\工程软件仿真应用\结课作业\_ProjectScratch\Scr5769
+     4             LAPTOP-TMO3KIEA   D:\音乐文档视频图片\Documents\学习文件\大三\工程软件仿真应用\结课作业\_ProjectScratch\Scr5769
+     5             LAPTOP-TMO3KIEA   D:\音乐文档视频图片\Documents\学习文件\大三\工程软件仿真应用\结课作业\_ProjectScratch\Scr5769
+     6             LAPTOP-TMO3KIEA   D:\音乐文档视频图片\Documents\学习文件\大三\工程软件仿真应用\结课作业\_ProjectScratch\Scr5769
+     7             LAPTOP-TMO3KIEA   D:\音乐文档视频图片\Documents\学习文件\大三\工程软件仿真应用\结课作业\_ProjectScratch\Scr5769
+ 
+ 
+
+Total CPU time for main thread                    :        0.2 seconds
+Total CPU time summed for all threads             :        0.0 seconds
+
+Elapsed time spent obtaining a license            :        0.4 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.0 seconds
+Elapsed time spent solution - preprocessing       :        0.0 seconds
+Elapsed time spent computing solution             :        0.0 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+
+Sum of disk space used on all processes           :        0.0 MB
+
+Sum of memory used on all processes               :       16.0 MB
+Sum of memory allocated on all processes          :        0.0 MB
+Physical memory available                         :         16 GB
+Total amount of I/O written to disk               :        0.0 GB
+Total amount of I/O read from disk                :        0.0 GB
+
++------------------ E N D   M A P D L   S T A T I S T I C S -------------------+
+
+
+ *-----------------------------------------------------------------------------*
+ |                                                                             |
+ |                               RUN COMPLETED                                 |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Ansys MAPDL 2024 R1         Build 24.1         UP20231106    WINDOWS x64   |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Database Requested(-db)     1024 MB     Scratch Memory Requested      0 MB |
+ |  Max Database Used(Master)      1 MB     Max Scratch Used(Master)      1 MB |
+ |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)     1 MB |
+ |  Sum Database Used(All)         8 MB     Sum Scratch Used(All)         8 MB |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |        CP Time      (sec) =          0.047       Time  =  16:15:28          |
+ |        Elapsed Time (sec) =          2.000       Date  =  06/19/2025        |
+ |                                                                             |
+ *-----------------------------------------------------------------------------*

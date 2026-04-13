@@ -1,0 +1,106 @@
+# encoding: utf-8
+# 2024 R1
+SetScriptVersion(Version="24.1.144")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="2011铝合金")
+matlProp1 = matl1.CreateProperty(
+    Name="Density",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp2 = matl1.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Density"],
+    Values=[["2830 [kg m^-3]"]])
+matlProp2.SetData(
+    Index=-1,
+    Variables=["Young's Modulus"],
+    Values=[["70 [Pa]"]])
+matlProp2.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="GPa")
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["7E-08 [GPa]"]])
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["70 [GPa]"]])
+matlProp2.SetData(
+    Variables=["Poisson's Ratio"],
+    Values=[["0.33"]])
+matlProp3 = matl1.CreateProperty(
+    Name="Tensile Yield Strength",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp3.SetVariableProperty(
+    VariableName="Tensile Yield Strength",
+    Property="Unit",
+    Value="MPa")
+matlProp3.SetData(
+    Index=-1,
+    Variables=["Tensile Yield Strength"],
+    Values=[["486.1 [MPa]"]])
+Save(Overwrite=True)
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="D:/音乐文档视频图片/Documents/学习文件/大三/工程软件仿真应用/结课作业/柔性arm.STEP")
+Save(Overwrite=True)
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+model1.Exit()
+Save(Overwrite=True)
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+system1.Copy(KeepConnections=True)
+system2 = GetSystem(Name="SYS 1")
+geometry2 = system2.GetContainer(ComponentName="Geometry")
+geometry2.SetFile(FilePath="D:/音乐文档视频图片/Documents/学习文件/大三/工程软件仿真应用/结课作业/机械爪.STEP")
+modelComponent2 = system2.GetComponent(Name="Model")
+modelComponent2.Refresh()
+model2 = system2.GetContainer(ComponentName="Model")
+model2.Edit()
+model2.Exit()
+model2.Edit()
+model2.Exit()
+Save(Overwrite=True)
+model2.Edit()
+model2.Exit()
+geometry2.SetFile(FilePath="D:/音乐文档视频图片/Documents/学习文件/大三/工程软件仿真应用/结课作业/机械爪.STEP")
+model2.Edit()
+model2.Exit()
+geometry2.SetFile(FilePath="D:/音乐文档视频图片/Documents/学习文件/大三/工程软件仿真应用/结课作业/柔性arm.STEP")
+model2.Edit()
+model2.Exit()
+engineeringDataComponent1 = system2.GetComponent(Name="Engineering Data")
+system3 = system2.Duplicate(
+    ComponentsToShare=[engineeringDataComponent1],
+    RelativeTo=system2)
+system3.Delete()
+geometry2.SetFile(FilePath="D:/音乐文档视频图片/Documents/学习文件/大三/工程软件仿真应用/结课作业/机械爪.STEP")
+model2.Edit()
+model2.Exit()
+geometry2.SetFile(FilePath="D:/音乐文档视频图片/Documents/学习文件/大三/工程软件仿真应用/结课作业/机械爪.STEP")
+modelComponent2.Refresh()
+model2.Edit()
+Save(Overwrite=True)
+model2.Exit()
+model2.Edit()
+model2.Exit()
+Save(Overwrite=True)

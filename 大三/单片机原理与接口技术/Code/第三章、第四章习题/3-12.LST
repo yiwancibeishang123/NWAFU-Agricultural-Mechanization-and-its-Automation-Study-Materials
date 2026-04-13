@@ -1,0 +1,30 @@
+A51 MACRO ASSEMBLER  3_12                                                                 10/10/2024 19:51:16 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN 3-12.OBJ
+ASSEMBLER INVOKED BY: D:\Download\Keil4\C51\BIN\A51.EXE 3-12.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1            ORG 0
+0000 7840              2            MOV R0,#40H;
+0002 74FF              3            MOV A,#0FFH;
+0004 5481              4            ANL A,#81H;
+0006 6400              5                XRL A,#0;
+0008 F6                6                MOV @R0,A;
+                       7                END
+A51 MACRO ASSEMBLER  3_12                                                                 10/10/2024 19:51:16 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

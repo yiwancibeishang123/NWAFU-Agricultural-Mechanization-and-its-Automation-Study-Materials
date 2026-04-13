@@ -1,0 +1,77 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        10/22/2024  21:30:27  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\DOWNLOAD\KEIL4\C51\BIN\BL51.EXE 5-2.obj TO 5-2
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  5-2.obj (5_2)
+  D:\DOWNLOAD\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  5-2 (5_2)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *  X D A T A   M E M O R Y  * * * * * * *
+            XDATA   0000H     0001H     UNIT         _XDATA_GROUP_
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0034H     UNIT         ?PR?MAIN?5_2
+            CODE    0037H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   5-2 (5_2)
+
+
+SEGMENT                          XDATA_GROUP
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?5_2
+
+?PR?MAIN?5_2                   0000H    0001H
+
+
+
+SYMBOL TABLE OF MODULE:  5-2 (5_2)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        5_2
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0003H         PUBLIC        main
+  -------         PROC          MAIN
+  -------         DO            
+  X:0000H         SYMBOL        i
+  -------         ENDDO         
+  C:0003H         LINE#         3
+BL51 BANKED LINKER/LOCATER V6.22                                                      10/22/2024  21:30:27  PAGE 2
+
+
+  C:0003H         LINE#         4
+  C:0003H         LINE#         5
+  C:0008H         LINE#         6
+  C:001DH         LINE#         7
+  C:001DH         LINE#         8
+  C:002EH         LINE#         9
+  C:0034H         LINE#         10
+  C:0036H         LINE#         11
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        5_2
+
+Program Size: data=9.0 xdata=1 code=67
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

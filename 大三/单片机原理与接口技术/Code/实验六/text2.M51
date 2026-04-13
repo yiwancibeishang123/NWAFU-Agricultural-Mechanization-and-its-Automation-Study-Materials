@@ -1,0 +1,101 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/28/2024  19:32:02  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\DOWNLOAD\KEIL4\C51\BIN\BL51.EXE test2.obj TO text2
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  test2.obj (TEST2)
+  D:\DOWNLOAD\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  text2 (TEST2)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0043H     UNIT         ?PR?MAIN?TEST2
+            CODE    0046H     001EH     UNIT         ?PR?_DELAYMS?TEST2
+            CODE    0064H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0070H     0008H     UNIT         ?CO?TEST2
+
+
+
+OVERLAY MAP OF MODULE:   text2 (TEST2)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?TEST2
+
+?PR?MAIN?TEST2
+  +--> ?PR?_DELAYMS?TEST2
+  +--> ?CO?TEST2
+
+
+
+SYMBOL TABLE OF MODULE:  text2 (TEST2)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TEST2
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0070H         PUBLIC        table
+  C:0003H         PUBLIC        main
+  C:0046H         PUBLIC        _delayms
+  -------         PROC          _DELAYMS
+  D:0006H         SYMBOL        i
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/28/2024  19:32:02  PAGE 2
+
+
+  -------         DO            
+  D:0006H         SYMBOL        j
+  D:0004H         SYMBOL        k
+  -------         ENDDO         
+  C:0046H         LINE#         14
+  C:0046H         LINE#         15
+  C:0046H         LINE#         17
+  C:004FH         LINE#         18
+  C:0063H         LINE#         19
+  -------         ENDPROC       _DELAYMS
+  -------         PROC          MAIN
+  -------         DO            
+  D:0002H         SYMBOL        n
+  D:0003H         SYMBOL        b
+  -------         ENDDO         
+  C:0003H         LINE#         21
+  C:0003H         LINE#         22
+  C:0003H         LINE#         23
+  C:0005H         LINE#         24
+  C:000BH         LINE#         25
+  C:0010H         LINE#         26
+  C:0016H         LINE#         27
+  C:0016H         LINE#         28
+  C:0016H         LINE#         29
+  C:0018H         LINE#         30
+  C:0018H         LINE#         31
+  C:001EH         LINE#         32
+  C:0021H         LINE#         33
+  C:0024H         LINE#         34
+  C:002DH         LINE#         35
+  C:0034H         LINE#         36
+  C:0040H         LINE#         37
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        TEST2
+
+Program Size: data=9.0 xdata=0 code=120
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

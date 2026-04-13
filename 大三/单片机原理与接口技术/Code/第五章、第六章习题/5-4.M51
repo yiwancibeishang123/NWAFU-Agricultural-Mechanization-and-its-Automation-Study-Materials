@@ -1,0 +1,83 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        10/22/2024  22:09:17  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\DOWNLOAD\KEIL4\C51\BIN\BL51.EXE 5-4.obj TO 5-4
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  5-4.obj (5_4)
+  D:\DOWNLOAD\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\DOWNLOAD\KEIL4\C51\LIB\C51S.LIB (?C?UIDIV)
+
+
+LINK MAP OF MODULE:  5-4 (5_4)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0055H     UNIT         ?C?LIB_CODE
+            CODE    0058H     003CH     UNIT         ?PR?MAIN?5_4
+            CODE    0094H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   5-4 (5_4)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?5_4
+
+
+
+SYMBOL TABLE OF MODULE:  5-4 (5_4)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        5_4
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0058H         PUBLIC        main
+  -------         PROC          MAIN
+  -------         DO            
+  D:0003H         SYMBOL        a
+  D:0002H         SYMBOL        b
+  D:0007H         SYMBOL        c
+  D:0006H         SYMBOL        d
+  -------         ENDDO         
+  C:0058H         LINE#         4
+BL51 BANKED LINKER/LOCATER V6.22                                                      10/22/2024  22:09:17  PAGE 2
+
+
+  C:0058H         LINE#         5
+  C:0058H         LINE#         8
+  C:005CH         LINE#         10
+  C:005EH         LINE#         11
+  C:0063H         LINE#         12
+  C:0077H         LINE#         13
+  C:008AH         LINE#         15
+  C:008EH         LINE#         16
+  C:0091H         LINE#         17
+  C:0093H         LINE#         19
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        5_4
+
+  -------         MODULE        ?C?UIDIV
+  C:0003H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+Program Size: data=9.0 xdata=0 code=160
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

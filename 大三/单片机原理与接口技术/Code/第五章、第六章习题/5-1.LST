@@ -1,0 +1,34 @@
+C51 COMPILER V9.01   5_1                                                                   10/22/2024 21:24:45 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE 5_1
+OBJECT MODULE PLACED IN 5-1.OBJ
+COMPILER INVOKED BY: D:\Download\Keil4\C51\BIN\C51.EXE 5-1.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <absacc.h>
+   2          #include <reg51.h>
+   3          void main()
+   4          {
+   5   1        char data i=0;
+   6   1        while(i<=0x30)
+   7   1        {
+   8   2        DBYTE[0x40+i]=0x10;
+   9   2        i++;
+  10   2        }
+  11   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     13    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

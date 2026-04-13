@@ -1,0 +1,14 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\音乐文档视频图片\Documents\学习文件\单片机原理与接口技术\Code\实验一\Text2.uvproj
+Project File Date:  10/24/2024
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Text2.asm...
+linking...
+Program Size: data=8.0 xdata=0 code=19
+"Text2" - 0 Error(s), 0 Warning(s).

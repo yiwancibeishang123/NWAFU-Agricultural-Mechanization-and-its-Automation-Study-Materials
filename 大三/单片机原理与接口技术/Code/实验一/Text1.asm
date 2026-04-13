@@ -1,0 +1,15 @@
+      ORG 0
+START:MOV 31H,#78H
+      MOV 32H,#34H
+	  MOV 33H,#98H
+	  MOV 34H,#89H
+	  MOV A,31H
+	  ADD A,32H
+	  MOV 35H,A
+	  MOV A,33H
+	  ADDC A,34H
+	  MOV 36H,A
+	  MOV A,#0
+	  ADDC A,#0
+	  MOV 37H,A
+	  END
